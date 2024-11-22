@@ -12,8 +12,8 @@
 
 import { Route as rootRoute } from './routes/__root'
 import { Route as LayoutImport } from './routes/_layout'
-import { Route as LayoutDashboardImport } from './routes/_layout/dashboard'
 import { Route as IndexImport } from './routes/index'
+import { Route as LayoutDashboardImport } from './routes/_layout/dashboard'
 
 // Create/Update Routes
 
