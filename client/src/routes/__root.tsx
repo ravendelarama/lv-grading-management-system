@@ -1,13 +1,25 @@
-import { Outlet, createRootRoute } from "@tanstack/react-router";
+import { API } from "@/lib/api";
+import { QueryClient } from "@tanstack/react-query";
+import {
+  Outlet,
+  ScrollRestoration,
+  createRootRouteWithContext,
+} from "@tanstack/react-router";
 import * as React from "react";
 
-export const Route = createRootRoute({
+interface RouteContext {
+  api: API;
+  queryClient: QueryClient;
+}
+
+export const Route = createRootRouteWithContext<RouteContext>()({
   component: RootComponent,
 });
 
 function RootComponent() {
   return (
     <React.Fragment>
+      <ScrollRestoration />
       <Outlet />
     </React.Fragment>
   );

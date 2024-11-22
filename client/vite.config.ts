@@ -5,6 +5,7 @@ import { fileURLToPath } from "url";
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  
   plugins:
     [
       TanStackRouterVite(),
@@ -16,6 +17,7 @@ export default defineConfig({
       "declarations": fileURLToPath(new URL("../declarations", import.meta.url)),
       // Adding shadcn alias for components
       "@": path.resolve(__dirname, "./src"),
+      
     },
   },
 })
