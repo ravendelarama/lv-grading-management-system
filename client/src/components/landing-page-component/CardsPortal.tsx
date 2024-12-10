@@ -12,7 +12,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ to, title, description, icon }) => (
   <Link
     to={to}
-    className="flex flex-col items-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+    className="flex flex-col items-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 bg-blue-"
   >
     <div className="text-primary mb-4">{icon}</div>
     <h2 className="text-xl font-semibold text-gray-800 mb-2">{title}</h2>
@@ -22,7 +22,7 @@ const Card: React.FC<CardProps> = ({ to, title, description, icon }) => (
 
 export const CardPortal: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl ">
       <Card
         to="/automation"
         title="Class Record"
