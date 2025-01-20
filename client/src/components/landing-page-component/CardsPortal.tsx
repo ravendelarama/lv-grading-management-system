@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Folder, Settings, FileText } from 'lucide-react'
+import {  Settings, FileText } from 'lucide-react'
 
 interface CardProps {
   to: string
@@ -23,12 +23,7 @@ const Card: React.FC<CardProps> = ({ to, title, description, icon }) => (
 export const CardPortal: React.FC = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl ">
-      <Card
-        to="/automation"
-        title="Class Record"
-        description="Explore the class record features of the system."
-        icon={<Folder size={24} />}
-      />
+
       <Card
         to="/management"
         title="Management"
