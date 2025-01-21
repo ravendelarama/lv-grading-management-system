@@ -4,6 +4,7 @@ import Management from './pages/management';
 import TOR from './pages/tor';
 
 import AuthenticationPage from './pages';
+import LoadingPage from './components/loading-page';
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
         <Route path="/tor" element={<TOR />} />
         {/* Optional: Default route */}
         <Route path="/" element={<AuthenticationPage/>}/>
+        <Route path="/loading-page" element={<LoadingPage/>}/>
       </Routes>
     </Router>
   );

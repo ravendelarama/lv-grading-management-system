@@ -11,10 +11,10 @@ const AuthenticationPage: React.FC = () => {
   const [showPassword, setShowPassword] = useState(false)
 
   return (
-    <div className="min-h-screen flex p-4 md:p-8 lg:p-12">
+    <div className="min-h-screen flex p-4 md:p-8 lg:p-24">
       <div className="w-full flex flex-col lg:flex-row overflow-hidden border border-gray-300 rounded-3xl  ">
         {/* Left Side: Image */}
-        <div className="hidden lg:block lg:w-1/2 relative">
+        <div className="hidden lg:block lg:w-3/5 ">
           <img
             src="https://media.licdn.com/dms/image/v2/C561BAQG8uLmppb8XOQ/company-background_10000/company-background_10000/0/1643909212326/la_verdad_christian_school_apalit_pampanga_cover?e=2147483647&v=beta&t=X7z1A71Fi6rlYqx3RhwnTpFhBnG0ew8APxcJmFH-nV8"
             alt="La Verdad Christian College Entrance"
@@ -31,9 +31,9 @@ const AuthenticationPage: React.FC = () => {
                 <img
                   src="https://res.cloudinary.com/dihmqs39z/image/upload/v1731654756/LV-Logo_gjbcpk.png"
                   alt="LVCC GMS Logo"
-                  className="w-16 h-16 "
+                  className="w-20 h-20 "
                 />
-                <h2 className="text-xl font-extrabold text-gray-900 ">LVCC GMS</h2>
+                <h2 className="text-xl font-extrabold text-gray-900 ">LVCC GMRS</h2>
               </div>
 
               <div className="space-y-2">
