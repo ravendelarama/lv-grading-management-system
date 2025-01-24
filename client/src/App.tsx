@@ -6,6 +6,7 @@ import TOR from './pages/tor';
 import AuthenticationPage from './pages';
 import LoadingPage from './components/loading-page';
 import SuccessfulOTP from './pages/auth-page/SucessfulOTP';
+import VerficationOTP from './pages/auth-page/OTPVerification';
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const App: React.FC = () => {
         <Route path="/" element={<AuthenticationPage/>}/>
         <Route path="/loading-page" element={<LoadingPage/>}/>
         <Route path="/successful-otp" element={<SuccessfulOTP/>}/>
+        <Route path="/verification-otp" element={<VerficationOTP/>}/>
       </Routes>
     </Router>
   );
