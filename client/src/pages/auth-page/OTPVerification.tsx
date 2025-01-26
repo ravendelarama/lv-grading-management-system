@@ -3,8 +3,17 @@
 import { InputOTPWithSeparator } from "@/components/InputOTPSeparator"
 import LandingLeftSide from "@/components/landing-page-component/LeftSide"
 import { Button } from "@/components/ui/button"
+import { useNavigate } from "react-router-dom"
 
 const VerficationOTP: React.FC = () => {
+
+  const navigate = useNavigate();
+
+  const handleVerification = () => {
+    navigate('/successful-otp')
+  }
+
+
   return (
     <div className="w-full flex flex-col lg:flex-row min-h-screen">
       {/* Landing Left side component */}
@@ -22,7 +31,7 @@ const VerficationOTP: React.FC = () => {
                 Enter your one time password 
               </p>
             </div>
-            <Button className=" bg-blue-950 text-white hover:bg-blue-900 w-28 " >
+            <Button onClick={handleVerification} className=" bg-blue-950 text-white hover:bg-blue-900 w-28 " >
               Verify 
             </Button>
           </div>
