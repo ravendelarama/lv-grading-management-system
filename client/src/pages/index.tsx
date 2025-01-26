@@ -7,16 +7,24 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Checkbox } from "@/components/ui/checkbox"
 import LandingLeftSide from "@/components/landing-page-component/LeftSide"
+import { useNavigate } from "react-router-dom"
 
 const AuthenticationPage: React.FC = () => {
   const [showPassword, setShowPassword] = useState(false)
+
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    navigate('/verification-otp')
+  }
+
+
 
   return (
     
       <div className="w-full flex flex-col lg:flex-row min-h-screen ">
         {/* Left Side: Image */}
         <LandingLeftSide/>
-
         {/* Right Side: Form */}
         <div className="flex flex-col flex-1 lg:w-2/5">
           <div className="flex flex-col flex-1 items-center justify-center p-6 sm:p-8 md:p-12">
@@ -77,7 +85,7 @@ const AuthenticationPage: React.FC = () => {
                 </div>
 
                 <div className="space-y-4">
-                  <Button type="submit" className="w-full bg-blue-950 text-white hover:bg-blue-900">
+                  <Button onClick={handleLogin} type="submit" className="w-full bg-blue-950 text-white hover:bg-blue-900 ">
                     Login
                   </Button>
 
