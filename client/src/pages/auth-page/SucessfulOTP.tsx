@@ -1,6 +1,5 @@
-
-
 import LandingLeftSide from "@/components/landing-page-component/LeftSide"
+
 import { Button } from "@/components/ui/button"
 import { CheckCircle } from "lucide-react"
 
